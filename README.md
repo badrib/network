@@ -252,3 +252,727 @@ On Success returns 200 with JSON data
         "result": "success"
     }
 
+
+Post DHCP subnet Configuration
+-------------------------------
+
+    Verb  URI	      		 Description
+    POST	/network/dhcp/subnet	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+           "start": "192.168.0.20",
+           "end": "192.168.0.254",
+           "interface": "eth0",
+           "max_leases": 254,
+           "remaining": "yes",
+           "auto_time": 7200,
+           "decline_time": 3600,
+           "conflict_time": 3600,
+           "offer_time": 60,
+           "min_lease": 60,
+           "lease_file": "/var/lib/misc/udhcpd.leases",
+           "pidfile": "/var/run/udhcpd.pid",
+           "notify_file": "dumpleases",
+           "siaddr": "192.168.0.22",
+           "sname": "zorak",
+           "boot_file": "/var/lib/misc/udhcpd.leases",
+           "option": ["subnet 192.168.0.25",
+                      "timezone IST"]     
+    }
+
+### Response JSON
+
+
+    {
+      "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+      "config":
+      {
+           "start": "192.168.0.20",
+           "end": "192.168.0.254",
+           "interface": "eth0",
+           "max_leases": 254,
+           "remaining": "yes",
+           "auto_time": 7200,
+           "decline_time": 3600,
+           "conflict_time": 3600,
+           "offer_time": 60,
+           "min_lease": 60,
+           "lease_file": "/var/lib/misc/udhcpd.leases",
+           "pidfile": "/var/run/udhcpd.pid",
+           "notify_file": "dumpleases",
+           "siaddr": "192.168.0.22",
+           "sname": "zorak",
+           "boot_file": "/var/lib/misc/udhcpd.leases",
+           "option": ["subnet 192.168.0.25",
+                      "timezone IST"]     
+      }      
+    }
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP router Configuration
+-------------------------------
+
+    Verb        URI	   		 Description
+    POST	/network/dhcp/router	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "router",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config":
+        {
+           "optionparam": "router",
+           "address": [
+           "192.10.0.40",
+           "192.10.0.41"
+         ]
+        } 
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP time server  Configuration
+-------------------------------------
+
+    Verb    URI        		         Description
+    POST    /network/dhcp/timesvr	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "timesvr",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+         ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+         "config":
+         {
+            "optionparam": "timesvr",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+
+Post DHCP name server Configuration
+-----------------------------------
+
+    Verb    URI        		         Description
+    POST    /network/dhcp/namesvr	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "namesvr",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config":
+        {
+            "optionparam": "namesvr",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+           ]
+        }
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+
+Post DHCP dns Configuration
+----------------------------
+
+    Verb    URI      		      Description
+    POST    /network/dhcp/dns  	      Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "dns",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        {
+            "optionparam": "dns",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP log server Configuration
+-----------------------------------
+
+    Verb    URI        		         Description
+    POST    /network/dhcp/logsvr	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "logsvr",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config":
+        {
+            "optionparam": "logsvr",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP cookie server Configuration
+--------------------------------------
+
+    Verb    URI        		         Description
+    POST    /network/dhcp/cookiesvr	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "cookiesvr",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+         ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config": 
+        {
+            "optionparam": "cookiesvr",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP lpr server Configuration
+--------------------------------------
+
+    Verb    URI          	         Description
+    POST    /network/dhcp/lprsvr	 Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "lprsvr",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config":
+        {
+            "optionparam": "lprsvr",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+    }
+
+
+Upon error, error code 500 will be returned
+
+
+Post DHCP ntp server Configuration
+--------------------------------------
+
+    Verb    URI          	        Description
+    POST    /network/dhcp/ntpsrv	Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "ntpsrv",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config:
+        {
+            "optionparam": "ntpsrv",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+
+    }
+
+
+Upon error, error code 500 will be returned
+
+Post DHCP wins server Configuration
+------------------------------------
+
+    Verb    URI          	    Description
+    POST    /network/dhcp/wins	    Update the dhcp udhcpd.conf file in VCG.
+
+On success it returns JSON data with the service-id, service-name, config success.
+
+*TODO: Define JSON format for error codes and description.*
+
+**Example Request and Response**
+
+### Request Headers
+
+
+### Request JSON
+
+    {
+        "optionparam": "wins",
+        "address": [
+        "192.10.0.40",
+        "192.10.0.41"
+        ]
+    }
+
+### Response JSON
+
+    {
+        "id": "85108146-6233-42d9-8f1c-2c8fca63f236",
+        "config:
+        {
+            "optionparam": "wins",
+            "address": [
+            "192.10.0.40",
+            "192.10.0.41"
+            ]
+        }
+
+    }
+
+Upon error, error code 500 will be returned
+
+
+
+
+Delete subnet config from DHCP configuration
+---------------------------------------------
+
+    Verb	URI	                          Description
+    DELETE      /network/dhcp/subnet/:id 	  Delete subnet config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/subnet/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+    
+
+Delete router config from DHCP configuration
+---------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/router/:id 	  Delete router config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/router/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+Delete time server config from DHCP configuration
+--------------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/timesvr/:id 	  Delete time server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/timesvr/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+
+Delete name server config from DHCP configuration
+--------------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/namesvr/:id 	  Delete name server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/namesvr/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+
+Delete dns config from DHCP configuration
+------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/dns/:id 	  Delete dns config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/dns/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+Delete log server config from DHCP configuration
+-------------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/logsvr/:id 	  Delete log server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/logsvr/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+
+Delete cookie server config from DHCP configuration
+----------------------------------------------------
+
+    Verb    URI	                                  Description
+    DELETE  /network/dhcp/cookiesvr/:id 	  Delete cookie server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/cookiesvr/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+
+Delete lpr server config from DHCP configuration
+-------------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/lprsvr/:id 	  Delete lpr server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/lprsvr/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+Delete ntp server config from DHCP configuration
+-------------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/ntpsrv/:id 	  Delete ntp server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/ntpsrv/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+Delete wins config from DHCP configuration
+-------------------------------------------
+
+    Verb    URI	                          Description
+    DELETE  /network/dhcp/wins/:id 	  Delete win server config from udhcpd.conf file
+
+
+On Success returns 200 with JSON data
+
+**Example Request and Response**
+
+### Request Headers
+
+    DELETE  /network/dhcp/wins/85108146-6233-42d9-8f1c-2c8fca63f236
+    
+### Response JSON
+
+    { "deleted": "success" }
+
+
+
+
+
+Describe DHCP 
+--------------
+
+    Verb    URI	                  Description
+    GET	    /network/dhcp/:id	  Show DHCP config info in VCG specified by service-ID
+
+**Example Request and Response**
+
+### Request Headers
+
+    GET /network/dhcp/2da8f435-42c1-45d2-9fad-04fdf7298c80
+
+### Response JSON
+
+    {
+            "key":"2da8f435-42c1-45d2-9fad-04fdf7298c80",
+            "val":
+              {
+                   "start":"192.168.0.20",
+                    "end":"192.168.0.254",
+                    "interface":"eth0",
+                    "max_leases":254,
+                    "remaining":"yes",
+                    "auto_time":7200,
+                    "decline_time":3600,
+                    "conflict_time":3600,
+                    "offer_time":60,
+                    "min_lease":60,
+                    "lease_file":"/var/lib/misc/udhcpd.leases",
+                    "pidfile":"/var/run/udhcpd.pid",
+                    "notify_file":"dumpleases",
+                    "siaddr":"192.168.0.22",
+                    "sname":"zorak",
+                    "boot_file":"/var/lib/misc/udhcpd.leases",
+                    "option":
+                    [
+                      "subnet 192.168.0.25",
+                      "timezone IST"
+                    ]
+                }
+    }
+    
+
+Please note that the top-level `id` returned above refers to the service-ID.
+
+Upon error, error code 500 will be returned
+
