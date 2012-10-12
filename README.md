@@ -22,96 +22,96 @@ cloudflash-network
     <td>DELETE</td><td>/network/interfaces/:id</td><td>Delete an configured network by ID</td>
   </tr>
   <tr>     
-    <td>POST</td><td>/network/dhcp/subnet</td><td>Update the DHCP configuration with subnet details in VCG</td>
+    <td>POST</td><td>/network/dhcp/subnet</td><td>Update subnet details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/subnet/:id</td><td>Get subnet config from DHCP configuration by id</td>  
+      <td>GET</td><td>/network/dhcp/subnet/:id</td><td>Describe subnet details for by id</td>  
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/subnet/:id</td><td>Delete subnet config from DHCP configuration by id</td>  
+      <td>DELETE</td><td>/network/dhcp/subnet/:id</td><td>Delete subnet details from DHCP by id</td>  
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/router</td><td>Update the DHCP configuration with router details in VCG</td>
+      <td>POST</td><td>/network/dhcp/router</td><td>Update router details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/router/:id</td><td>Get router config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/router/:id</td><td>Describe router details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/router/:id</td><td>Delete router config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/router/:id</td><td>Delete router details from DHCP by id</td>
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/timesvr</td><td>Update the DHCP configuration with time server details in VCG</td>
+      <td>POST</td><td>/network/dhcp/timesvr</td><td>Update time server details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/timesvr/:id</td><td>Get time server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/timesvr/:id</td><td>Describe time server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/timesvr/:id</td><td>Delete time server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/timesvr/:id</td><td>Delete time server details from DHCP by id</td>
   </tr>  
   <tr>
-      <td>POST</td><td>/network/dhcp/namesvr</td><td>Update the DHCP configuration with name server details in VCG</td>
+      <td>POST</td><td>/network/dhcp/namesvr</td><td>Update name server details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/namesvr/:id</td><td>Get name server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/namesvr/:id</td><td>Desribe name server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/namesvr/:id</td><td>Delete name server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/namesvr/:id</td><td>Delete name server details from DHCP by id</td>
   </tr>
   
   <tr>
-      <td>POST</td><td>/network/dhcp/dns</td><td>Update the DHCP configuration with DNS details in VCG</td>
+      <td>POST</td><td>/network/dhcp/dns</td><td>Update dns details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/dns/:id</td><td>Get dns config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/dns/:id</td><td>Describe dns details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/dns/:id</td><td>Delete dns config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/dns/:id</td><td>Delete dns details from DHCP by id</td>
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/logsvr</td><td>Update the DHCP configuration with  log server details in VCG</td>
+      <td>POST</td><td>/network/dhcp/logsvr</td><td>Update log server details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/logsvr/:id</td><td>Get log server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/logsvr/:id</td><td>Describe log server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/logsvr/:id</td><td>Delete log server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/logsvr/:id</td><td>Delete log server details from DHCP by id</td>
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/cookiesvr</td><td>Update the DHCP configuration with cookie server details in VCG</td>
+      <td>POST</td><td>/network/dhcp/cookiesvr</td><td>Update cookie server details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/cookiesvr/:id</td><td>Get cookie server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/cookiesvr/:id</td><td>Describe cookie server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/cookiesvr/:id</td><td>Delete cookie server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/cookiesvr/:id</td><td>Delete cookie server details from DHCP by id</td>
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/lprsvr</td><td>Update the DHCP configuration with lprsvr details in VCG</td>
+      <td>POST</td><td>/network/dhcp/lprsvr</td><td>Update lprsvr details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/lprsvr/:id</td><td>Get lpr server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/lprsvr/:id</td><td>Describe lpr server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/lprsvr/:id</td><td>Delete lpr server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/lprsvr/:id</td><td>Delete lpr server details from DHCP by id</td>
   </tr>
   <tr>
-      <td>POST</td><td>/network/dhcp/ntpsrv</td><td>Update the DHCP configuration with NTP server details in VCG</td>
+      <td>POST</td><td>/network/dhcp/ntpsrv</td><td>Update NTP server details for DHCP in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/ntpsrv/:id</td><td>Get ntp server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/ntpsrv/:id</td><td>Describe ntp server details for DHCP by id</td>
   </tr>
   <tr>
-      <td>DELETE</td><td>/network/dhcp/ntpsrv/:id</td><td>Delete ntp server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/ntpsrv/:id</td><td>Delete ntp server details from DHCP by id</td>
   </tr>
   <tr>
       <td>POST</td><td>/network/dhcp/wins</td><td>Update the DHCP configuration with WINS details in VCG</td>
   </tr>
   <tr>
-      <td>GET</td><td>/network/dhcp/wins/:id</td><td>Get win server config from DHCP configuration by id</td>
+      <td>GET</td><td>/network/dhcp/wins/:id</td><td>Describe wins server details for DHCP by id</td>
   </tr>
 
   <tr>
-      <td>DELETE</td><td>/network/dhcp/wins/:id</td><td>Delete win server config from DHCP configuration by id</td>
+      <td>DELETE</td><td>/network/dhcp/wins/:id</td><td>Delete wins server details from DHCP by id</td>
   </tr>
 
   <tr>
@@ -253,11 +253,11 @@ On Success returns 200 with JSON data
     }
 
 
-Configure DHCP subnet Details
------------------------------
+Configure subnet details for DHCP
+---------------------------------
 
     Verb  URI	      		 Description
-    POST	/network/dhcp/subnet	 Update Subnet details for DHCP in VCG.
+    POST	/network/dhcp/subnet	 Update subnet details for DHCP in VCG.
 
 On success it returns JSON data with the service-id, config success.
 
@@ -322,11 +322,11 @@ On success it returns JSON data with the service-id, config success.
 Upon error, error code 500 will be returned
 
 
-Describe subnet config in DHCP 
+Describe subnet details in DHCP 
 -------------------------------
 
     Verb	URI	                   Description
-    GET	/network/dhcp/subnet/:id	 Describe the subnet config in DHCP by ID.
+    GET	/network/dhcp/subnet/:id	 Describe the subnet config in DHCP by id.
 
 **Example Request and Response**
 
@@ -365,12 +365,11 @@ Describe subnet config in DHCP
 
 
 
-Delete subnet config from DHCP configuration
----------------------------------------------
+Delete subnet  details from DHCP
+--------------------------------
 
     Verb	URI	                           Description
-    DELETE      /network/dhcp/subnet/:id     Delete subnet config from udhcpd.conf file
-
+    DELETE      /network/dhcp/subnet/:id     Delete subnet details from DHCP by id.
 
 On Success returns 200 with JSON data
 
@@ -385,8 +384,8 @@ On Success returns 200 with JSON data
     { "deleted": "success" }
     
 
-Configure router configuration for DHCP
---------------------------------------
+Configure router details for DHCP
+---------------------------------
 
     Verb        URI	   	 Description
     POST	/network/dhcp/router	 Update router configuration for DHCP in VCG.
@@ -429,11 +428,10 @@ On success it returns JSON data with the service-id, service-name, config succes
 Upon error, error code 500 will be returned
 
 
-Describe router config in DHCP configuration
----------------------------------------------
-
+Describe router details in DHCP
+-------------------------------
     Verb    URI	                    Description
-    GET  /network/dhcp/router/:id 	  Describe router config in DHCP by id.
+    GET  /network/dhcp/router/:id 	  Describe router details in DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -459,11 +457,11 @@ On Success returns 200 with JSON data
     }
 
 
-Delete router config from DHCP configuration
----------------------------------------------
+Delete router details from DHCP
+-------------------------------
 
     Verb    URI	                       Description
-    DELETE  /network/dhcp/router/:id     Delete router config from DHCP by id.
+    DELETE  /network/dhcp/router/:id     Delete router details from DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -484,7 +482,7 @@ Configure time server  details for DHCP
 ---------------------------------------
 
     Verb    URI        		 Description
-    POST    /network/dhcp/timesvr	 Update time server details for DHCP configuration in VCG.
+    POST    /network/dhcp/timesvr	 Update time server details for DHCP in VCG.
 
 On success it returns JSON data with the service-id, service-name, config success.
 
@@ -524,11 +522,11 @@ On success it returns JSON data with the service-id, service-name, config succes
 Upon error, error code 500 will be returned
 
 
-Describe time server configuration in DHCP
-------------------------------------------
+Describe time server details for DHCP
+-------------------------------------
 
     Verb    URI	                       Description
-    GET     /network/dhcp/timesvr/:id    Describe time server config in DHCP by id.
+    GET     /network/dhcp/timesvr/:id    Describe time server details for DHCP by id.
 
 On Success returns 200 with JSON data
 
@@ -553,11 +551,11 @@ On Success returns 200 with JSON data
     }
 
 
-Delete time server config from DHCP configuration
+Delete time server details from DHCP configuration
 --------------------------------------------------
 
     Verb    URI	                        Description
-    DELETE  /network/dhcp/timesvr/:id     Delete time server config from DHCP by id.
+    DELETE  /network/dhcp/timesvr/:id     Delete time server details from DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -652,11 +650,11 @@ On Success returns 200 with JSON data
 
 
 
-Delete name server config from DHCP configuration
---------------------------------------------------
+Delete name server details from DHCP
+------------------------------------
 
     Verb    URI	                        Description
-    DELETE  /network/dhcp/namesvr/:id     Delete name server config from DHCP by id.
+    DELETE  /network/dhcp/namesvr/:id     Delete name server details from DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -750,11 +748,11 @@ On Success returns 200 with JSON data
 
 
 
-Delete dns config from DHCP configuration
-------------------------------------------
+Delete dns details from DHCP
+---------------------------
 
     Verb    URI	                    Description
-    DELETE  /network/dhcp/dns/:id 	  Delete dns config from DHCP by id.
+    DELETE  /network/dhcp/dns/:id 	  Delete dns details from DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -846,11 +844,11 @@ On Success returns 200 with JSON data
 
     }
 
-Delete log server config from DHCP configuration
--------------------------------------------------
+Delete log server details from DHCP
+-----------------------------------
 
     Verb    URI	                       Description
-    DELETE  /network/dhcp/logsvr/:id     Delete log server config from DHCP by id.
+    DELETE  /network/dhcp/logsvr/:id     Delete log server details from DHCP by id.
 
 On Success returns 200 with JSON data
 
@@ -912,11 +910,11 @@ On success it returns JSON data with the service-id, service-name, config succes
 Upon error, error code 500 will be returned
 
 
-Describe cookie server details in DHCP
---------------------------------------
+Describe cookie server details for DHCP
+---------------------------------------
 
     Verb   URI	                          Description
-    GET    /network/dhcp/cookiesvr/:id      Describe cookie server details in DHCP by id.
+    GET    /network/dhcp/cookiesvr/:id      Describe cookie server details for DHCP by id.
 
 On Success returns 200 with JSON data
 
@@ -1009,11 +1007,11 @@ Upon error, error code 500 will be returned
 
 
 
-Describe lpr server details in DHCP
------------------------------------
+Describe lpr server details for DHCP
+------------------------------------
 
     Verb    URI	                   Description
-    GET  /network/dhcp/lprsvr/:id 	 Describe lpr server config in DHCP by id.
+    GET  /network/dhcp/lprsvr/:id 	 Describe lpr server config for DHCP by id.
 
 
 On Success returns 200 with JSON data
@@ -1039,11 +1037,11 @@ On Success returns 200 with JSON data
     }
 
 
-Delete lpr server config from DHCP
-----------------------------------
+Delete lpr server details from DHCP
+-----------------------------------
 
     Verb    URI	                        Description
-    DELETE  /network/dhcp/lprsvr/:id      Delete lpr server config from DHCP by id.
+    DELETE  /network/dhcp/lprsvr/:id      Delete lpr server details from DHCP by id.
 
 On Success returns 200 with JSON data
 
@@ -1234,12 +1232,11 @@ On Success returns 200 with JSON data
     }
 
 
-Delete wins config from DHCP configuration
--------------------------------------------
+Delete wins details from DHCP
+-----------------------------
 
     Verb    URI	                    Description
-    DELETE  /network/dhcp/wins/:id 	  Delete win server config from udhcpd.conf file
-
+    DELETE  /network/dhcp/wins/:id 	  Delete win server details from DHCP by id.
 
 On Success returns 200 with JSON data
 
